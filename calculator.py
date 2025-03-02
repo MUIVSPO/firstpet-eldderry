@@ -1,27 +1,27 @@
-def addition(x, y):
+def addition(x, y): ## Функция для сложения 
     return x + y
 
-def subtraction(x, y):
+def subtraction(x, y): ## Фунция для вычитания
     return x - y
 
-def multiplication(x, y):
+def multiplication(x, y): ## Функция для умножения
     return x * y
 
-def division(x, y):
+def division(x, y): ## Функция для деления 
     if y == 0:
         raise ZeroDivisionError("Деление на ноль невозможно!")
     return x / y
 
-def exponentiation(x, y):
+def exponentiation(x, y): ## Фунция для возведения в степень
     return x ** y
 
-def square_root(x):
+def square_root(x): ## Функция для вычисления квадратного корня 
     if x >= 0:
         return x ** 0.5
     else:
         raise ValueError("Квадратный корень из отрицательного числа невозможен!")
 
-def main():
+def main(): ## Ввод операций
     operations = {
         '+': addition,
         '-': subtraction,
